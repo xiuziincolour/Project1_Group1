@@ -1,5 +1,16 @@
 *
 
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 70%;
+    margin: auto;
+}
+
+
 h1 {
     align-self: stretch;
 
@@ -11,9 +22,9 @@ h1 {
     font-size: 34px;
     font-style: normal;
     font-weight: 400;
-    line-height: var(--Font-lineheight_h1, 48px); /* 141.176% */
+    line-height: var(--Font-lineheight_h1, 48px);
     
-    }
+}
 
 .h1_highlight {
         color: #1EAFDE;
@@ -22,21 +33,28 @@ h1 {
         font-size: 34px;
         font-style: normal;
         font-weight: 400;
-        line-height: var(--Font-lineheight_h1, 48px);
-    }
+}
 
 
 .pageintro {
         display: flex;
-        width: 1024px;
         flex-direction: column;
         justify-content: flex-end;
-        align-items: flex-start;
+        align-items: center;
         gap: 31px;
+        width: 1024px;
+        margin: auto;
+    }
+    
+
+.pageintro__content {
+    display: grid;
+    row-gap: 1rem;
 }
 
 
-    .pageintro__title {
+.pageintro__title {
+        
         height: 32px;
         flex-shrink: 0;
         align-self: stretch;
@@ -49,11 +67,10 @@ h1 {
         font-size: 28px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;
     
-    }
+}
 
-    .pageintro__subtitle {
+.pageintro__subtitle {
         align-self: stretch;
 
         color: #A3A3A3;
@@ -62,7 +79,13 @@ h1 {
         font-size: 11px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;
-    }
+}
 
+.web_solution {
+        display:flex;
+        justify-content: space-between;
+}
     
+.service-item {
+        text-align: center;
+}
