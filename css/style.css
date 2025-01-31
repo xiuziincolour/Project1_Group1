@@ -19,9 +19,9 @@ header {
 }
 
 .logo img {
-    width: 149px;
     margin:auto;
     display: block;
+    width: 149px;
 }
 
 nav {
