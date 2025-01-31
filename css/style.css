@@ -1,0 +1,76 @@
+body {
+    margin: 0 auto; 
+    width: 1440px;
+}
+
+header {
+    width: 100%;
+    background: white;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; 
+    max-width: 1024px; 
+    margin: 0 auto; 
+    min-height: 96px; 
+}
+
+.logo img {
+    width: 149px;
+    margin:auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-btn {
+    list-style: none;
+    margin: 0;
+    display: inline-flex;
+    width: 672px;
+}
+
+.menu-btn li {
+    display: flex;
+    width: 134px;
+    height: 96px;
+    padding: 13px 15px;
+    align-items: flex-end;
+
+}
+
+.menu-btn li a {
+    font-family: Ubuntu;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.menu-btn__home {
+    background: #25C389;
+}
+
+.menu-btn__portfolio {
+    background: #FFB901;
+}
+
+.menu-btn__blog {
+    background: #DE6262;
+}
+
+.menu-btn__quo-vadis {
+    background: #19B2DE;
+}
+
+.menu-btn__lets-chat {
+    background: #265787;
+}
+
