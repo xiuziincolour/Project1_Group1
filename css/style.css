@@ -1,0 +1,68 @@
+*
+
+h1 {
+    align-self: stretch;
+
+    color: #3B3B3B;
+    text-align: center;
+
+    /* Heading H1 */
+    font-family: Ubuntu;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Font-lineheight_h1, 48px); /* 141.176% */
+    
+    }
+
+.h1_highlight {
+        color: #1EAFDE;
+        /* Heading H1 */
+        font-family: Ubuntu;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Font-lineheight_h1, 48px);
+    }
+
+
+.pageintro {
+        display: flex;
+        width: 1024px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 31px;
+}
+
+
+    .pageintro__title {
+        height: 32px;
+        flex-shrink: 0;
+        align-self: stretch;
+
+        color: #494949;
+        text-align: center;
+
+        /* Heading H2 */
+        font-family: Ubuntu;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    
+    }
+
+    .pageintro__subtitle {
+        align-self: stretch;
+
+        color: #A3A3A3;
+        text-align: center;
+        font-family: "Myriad Pro";
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    
