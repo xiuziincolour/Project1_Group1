@@ -49,15 +49,15 @@
 }
 
 
-/* 彩色條設定 */
+
 .color-bar__blue,
 .color-bar__red,
 .color-bar__yellow {
-    width: 5px; /* 固定寬度 */
-    height: 40px; /* 固定高度 */
+    width: 5px; 
+    height: 40px; 
 }
 
-/* 各別顏色 */
+
 .color-bar__blue {
     background-color: #186AA2;
 }
@@ -68,13 +68,13 @@
     background-color: #FFB901;
 }
 
-/* 旗幟區塊 */
+
 .flag-container {
     display: flex;
     align-items: center;
 }
 
-/* 白色標籤設定 */
+
 .flagwhite__blue,
 .flagwhite__red,
 .flagwhite__yellow {
