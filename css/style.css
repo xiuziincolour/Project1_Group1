@@ -1,0 +1,88 @@
+/* PAGE_BANNER-CSS */
+.banner {
+    position: relative;
+    width: 1441px;
+    height: 512px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.banner-container {
+    position: relative;
+    width: 1024px; 
+    height: 512px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.banner-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;  
+    height: 100%; 
+    object-fit: cover; 
+    z-index: -1;
+}
+
+
+.gray-bg {
+    position: absolute;
+    width: 1441px;
+    height: 512px;
+    bottom: 0;
+    left: 0;
+    background-color: #EBEBEB;
+    z-index: -2; 
+}
+
+
+.pagebanner-flag {
+    position: absolute;
+    top: 196px;
+    left: 55px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+/* 彩色條設定 */
+.color-bar__blue,
+.color-bar__red,
+.color-bar__yellow {
+    width: 5px; /* 固定寬度 */
+    height: 40px; /* 固定高度 */
+}
+
+/* 各別顏色 */
+.color-bar__blue {
+    background-color: #186AA2;
+}
+.color-bar__red {
+    background-color: #DE6262;
+}
+.color-bar__yellow {
+    background-color: #FFB901;
+}
+
+/* 旗幟區塊 */
+.flag-container {
+    display: flex;
+    align-items: center;
+}
+
+/* 白色標籤設定 */
+.flagwhite__blue,
+.flagwhite__red,
+.flagwhite__yellow {
+    background-color: white;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3C3C3C;
+    
+}
+
