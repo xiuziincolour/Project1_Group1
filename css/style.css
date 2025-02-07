@@ -520,3 +520,162 @@ h1 {
     
 
 
+/*================Footer=============*/
+
+.footer {
+    background-color: #0A1931;
+    color: white;
+    padding: 32px 0px;
+    width: 1440px;
+    height: 598px;
+}
+
+/* Footer container */
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CEO section */
+.footer__ceo {
+    display: flex;
+    align-items: left;
+    max-width: 800px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 12px;
+    width: 546px;
+    height: 72px;
+    margin-left: 0;
+
+}
+
+.footer__ceo-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    margin-right: 20px;
+}
+
+/* Make About Us, Instagram, Mastodon, Social Media horizontal */
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+/* The size of every section */
+.footer__aboutus {
+    width: 232px;
+}
+
+.footer__instagram {
+    width: 232px;
+}
+
+.footer__mastodon {
+    width: 320px;
+    height: 365px;
+}
+
+.footer__socialmedia {
+    width: 144px;
+    height: 176px;
+}
+
+.footer__aboutus{
+    font-size: 12px;
+}
+
+h3{
+    font-size: 15px;
+}
+
+.h3_Mastodon{
+    color: #19B2DE;
+    font-weight: 500;
+    font-style: bold;
+}
+
+.h3__Aboutus{
+    color: #FFB901;
+    font-weight: 500;
+    font-style: bold;
+}
+
+.h3_Instagram{
+    color: #DE6262;
+    font-weight: 500;
+    font-style: bold;
+}
+
+
+/* Instagram img */
+.footer__instagram__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 64px);
+    grid-template-rows: repeat(3, 64px);
+    gap: 5px;
+}
+
+.footer__instagram__gallery img {
+    width: 64px;
+    height: 64px;
+}
+
+/* Mastodon type */
+.footer__mastodon p {
+    font-size: 9px;
+}
+
+.mastodon_hightlight{
+    color: #1BADE6;
+}
+
+/* Make Social Media icons horizontal */
+.footer__socialmedia-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 32px);
+    grid-template-rows: repeat(1, 32px);
+    gap: 5px;
+}
+
+.media-icon {
+    width: 32px;
+    height: 32px;
+}
+
+/* Email input form */
+.footer__socialmedia-form {
+    margin-top: 10px;
+}
+
+.footer__socialmedia-form input {
+    width: 100px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.footer__socialmedia-form button {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #E67E22;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.footer__decorate{
+    display: flex;              
+    justify-content: flex-start; 
+    align-items: flex-end;    
+    gap: 0;  
+    margin-top: 120.96px;                    
+}
