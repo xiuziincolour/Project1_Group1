@@ -620,6 +620,7 @@ h1 {
 
     margin: 10px;
     position: absolute;
+    align-items: flex-end;
   
 }
 
