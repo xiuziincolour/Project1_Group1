@@ -1,9 +1,4 @@
-/* ==========================================================================
-   2. LAYOUT
-   ========================================================================== */
-
-
-/* Helper to display empty layout containers*/
+/*=============Responsive Layout===========*/
 
 div,
 main,
@@ -24,7 +19,6 @@ header {
 
 .col {
     position: relative;
-    background-color: rgb(242, 230, 177);
     padding: 1rem;
 }
 
@@ -125,26 +119,6 @@ header {
     }
 }
 
-/* ==========================================================================
-   2. MODULES
-   ========================================================================== */
-
-
-/* ==========================================================================
-   2. STATES
-   ========================================================================== */
-
-
-/* ==========================================================================
-   2. THEME
-   ========================================================================== */
-
-
-/* ==========================================================================
-   6. UTILITY classes
-   ========================================================================== */
-
-
 /*
  * Hide visually and from screen readers
  */
@@ -154,14 +128,6 @@ header {
     display: none !important;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
 
 .sr-only {
     border: 0;
@@ -175,12 +141,6 @@ header {
     width: 1px;
     /* 1 */
 }
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
@@ -201,17 +161,6 @@ header {
     visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
 
 .clearfix::before,
 .clearfix::after {
@@ -230,11 +179,6 @@ header {
     /* Style adjustments for high resolution devices */
 }
 
-/* ==========================================================================
-   7. PRINT  styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
 
 @media print {
     *,
@@ -272,10 +216,7 @@ header {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-    /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+  
     thead {
         display: table-header-group;
     }
@@ -435,7 +376,7 @@ nav {
     font-weight: bold;
 }
 
-/*==========page intro===============*/
+/*====================page intro=====================*/
 
 h1 {
         align-self: stretch;
@@ -460,10 +401,14 @@ h1 {
      .pageintro {
             margin: auto;
         }
-       
+    
+    .pageintro__header {
+            padding: 20px 0px 0px 0px;
+    }
+
      .pageintro__content {
-        display: grid;
-        row-gap: 1rem;
+            display: grid;
+            row-gap: 1rem;
      }
      
      .pageintro__title {      
@@ -533,21 +478,49 @@ h1 {
         color: #1596BD;
      }
 
-     .pageintro {
-        padding: 50px 0px 0px 0px;
-     }
-
      .web_solution {
         padding: 50px 0px 0px 0px;
-     }
-
-     .pageintro__header {
-        padding: 10px 0px 0px 0px;
+        
      }
 
 
+     /*================Portfolio=============*/
+     .portfolio {
+        margin: auto;
 
-/* Footer */
+    }
+
+    .portfolio__header {
+        padding: 20px 0px 20px 0px;
+    }
+ 
+    .portfolio__title {
+        color: #494949;
+        text-align: center;
+        /* Heading H2 */
+        font-size: 28px;
+        font-weight: 400;
+    }
+    
+    
+    .portfolio__subtitle {
+        padding: 0px;
+        align-self: stretch;
+        color: #A3A3A3;
+        text-align: center;
+        font-family: "Myriad Pro";
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+    }     
+    
+
+        
+        
+    
+
+
+/*================Footer=============*/
 
 .footer {
     background-color: #0A1931;
