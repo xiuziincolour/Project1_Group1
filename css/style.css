@@ -547,3 +547,97 @@ h1 {
 
 
 
+/*---------*/
+
+
+
+
+.blog__content {
+    display: flex;
+    justify-content: space-between; 
+    width: 1024px; 
+    margin: 0 auto;
+}
+
+.calendar-item {
+    width: 320px;
+    height: 256px;
+    background: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.calendar-item__content {
+    width: 320px;
+    height: 256px;
+    display: block;
+    object-fit: cover;
+}
+
+.calendar-item__date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 34px;
+    background: #D8605F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.calendar-item__day {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+}
+
+.calendar-item__year {
+    font-size: 8px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.calendar-item__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; 
+    background: #19B2DE; 
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.calendar-item__icon {
+
+    margin: 10px;
+    position: absolute;
+    align-items: flex-end;
+  
+}
+
+.calendar-item__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.calendar-item__heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.calendar-item__subtitle {
+    font-size: 11px;
+    margin: 0;
+}
