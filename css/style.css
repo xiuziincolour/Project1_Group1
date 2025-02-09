@@ -594,6 +594,7 @@ h1 {
     text-align: center;
     font-family: "Myriad Pro";
     font-size: 12px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
 }
@@ -659,10 +660,7 @@ h1 {
     align-self: stretch;
     color: #494949;
     text-align: center;
-    /* Heading H2 */
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
+margin: 40px 0 0 0;
 }
 
 .blog__subtitle {
@@ -793,11 +791,13 @@ h1 {
     padding: 0px;
     align-self: stretch;
     color: #A2A2A2;
+    color: #A2A2A2;
     text-align: center;
     font-family: "Myriad Pro";
     font-size: 11px;
     font-style: normal;
     font-weight: 400;
+    line-height: normal;
     line-height: normal;
 }
 
