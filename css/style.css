@@ -598,10 +598,17 @@ h1 {
     font-weight: 400;
 }
 
+.web_solution {
+    width: 1024px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding-top: 1.94rem;
+
+}
 
 .service-item {
     text-align: center;
-    padding: 1rem;
+    
 }
 
 .service-item__text {
@@ -643,10 +650,8 @@ h1 {
     color: #1596BD;
 }
 
-.web_solution {
-    padding: 50px 0px 0px 0px;
 
-}
+/*=================BLOG===================*/
 
 .blog__content {
     display: flex;
@@ -654,6 +659,7 @@ h1 {
     width: 1024px;
     margin: 0 auto;
 }
+
 
 
 .calendar-tittle {
@@ -745,11 +751,6 @@ h1 {
 
 
 /*================Portfolio=============*/
-.portfolio {
-    margin: auto;
-
-}
-
 .portfolio__header {
     padding: 20px 0px 20px 0px;
 }
@@ -774,6 +775,12 @@ h1 {
     font-weight: 400;
 }
 
+.portfolio__grid {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0
+}
+
 
 
 
@@ -786,7 +793,7 @@ h1 {
     background-color: #0A1931;
     color: white;
     padding: 32px 0px;
-    width: 1440px;
+    width: auto;
     height: 598px;
 }
 
@@ -796,7 +803,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 1024px;;
     margin: 0 auto;
 }
 
