@@ -537,7 +537,7 @@ nav {
 .flagwhite__yellow {
     background-color: white;
     padding: 20px 20px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -655,8 +655,7 @@ h1 {
 
 .blog__title {
     text-align: center;
-margin: 40px 0 0 0;
-color: #494949;
+    margin: 40px 0 0 0;
 }
 
 .blog__subtitle {
@@ -668,6 +667,9 @@ color: #494949;
     font-weight: 400;
     line-height: normal;
     margin: 8px 0 32px 0;
+}
+.calendar-item hover{
+    background-color: rgba(25, 178, 222, 0.83);
 }
 
 
@@ -966,6 +968,7 @@ h3 {
     gap: 0;
     margin-top: 120.96px;
 }
+
 
 /*==============Client=============*/    
   
