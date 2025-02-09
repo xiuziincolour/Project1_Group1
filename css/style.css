@@ -515,12 +515,57 @@ h1 {
     }     
     
 
-        
-        
-    
+/*==============Client=============*/    
+  
+
+.client__title{
+    text-align: center;
+    font-size: 28pt;
+    margin-bottom: 8px;
+    color: #494949;
+}
+.client__subtitle{
+    color: #A3A3A3;
+    font-size: 11pt;
+    text-align: center;
+
+}
+.section_client{
+    width: 1024px;
+    height: 128px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin: 31px auto 64px; 
+    padding: 0px 16px;
+}
+
+.client__item{
+    width: 179px; 
+    height: 128px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 5px; 
+    margin-right: 32px;
+    overflow: hidden;
+}
+
+.client__item:last-child {
+    margin-right: 0;
+}
+
+.client__item img {
+    width: auto;
+    height: auto;
+    max-width: 100%;  
+    max-height: 100%;
+    object-fit: contain;
+}
 
 
-/*================Footer=============*/
+
+/*==============Footer=============*/
 
 .footer {
     background-color: #0A1931;
