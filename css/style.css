@@ -47,6 +47,7 @@ header {
         /* Space between items */
         padding: 10px;
     }
+    
 }
 
 
@@ -400,6 +401,9 @@ header {
 }
 
 
+
+
+
 /*===================================OUR CODE==================================*/
 
 html {
@@ -593,7 +597,7 @@ h1 {
     color: #A3A3A3;
     text-align: center;
     font-family: "Myriad Pro";
-    font-size: 12px;
+    font-size: 11px;
     font-style: normal;
     font-weight: 400;
 }
@@ -654,23 +658,8 @@ h1 {
 /*=================BLOG===================*/
 
 .blog__title {
-    height: 32px;
-    flex-shrink: 0;
-    align-self: stretch;
-    color: #494949;
-    height: 32px;
-    flex-shrink: 0;
-    align-self: stretch;
-    color: #494949;
     text-align: center;
-<<<<<<< HEAD
     margin: 40px 0 0 0;
-=======
-    /* Heading H2 */
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
->>>>>>> 8068885669e7225cfe08052d544349e25a5cc260
 }
 
 .blog__subtitle {
@@ -683,18 +672,22 @@ h1 {
     line-height: normal;
     margin: 8px 0 32px 0;
 }
-.calendar-item hover{
-    background-color: rgba(25, 178, 222, 0.83);
-}
 
 
 .blog__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     width: 1024px;
     margin: 0 auto;
 }
 
+@media screen and (max-width: 39.9375em) {
+    .blog__content {
+        grid-template-columns: 1fr; 
+        width: 100%; 
+    }
+}
 
 
 .calendar-tittle {
@@ -785,6 +778,7 @@ h1 {
 
 
 
+
 /*================Portfolio=============*/
 
 .portfolio__header {
@@ -803,15 +797,13 @@ h1 {
 .portfolio__subtitle {
     padding: 0px;
     align-self: stretch;
-    color: #A2A2A2;
+    color: #A3A3A3;
     text-align: center;
     font-family: "Myriad Pro";
     font-size: 11px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
-
 
 .portfolio__grid {
     max-width: 1024px;
