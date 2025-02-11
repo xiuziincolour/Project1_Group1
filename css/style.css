@@ -1,4 +1,3 @@
-
 /*=============Responsive Layout===========*/
 
 div,
@@ -9,6 +8,152 @@ header {
     min-height: 1rem;
     padding: 0;
 }
+
+
+/* 2.1 Core layout */
+
+.row {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.col {
+    position: relative;
+    padding: 1rem;
+}
+
+
+/* footer */
+
+.footer__content {
+    grid-template-rows: auto;
+}
+
+
+/* 2.2 Small only */
+
+@media screen and (max-width: 39.9375em) {
+    .s-hide {
+        display: none;
+    }
+
+    .pageintro__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+    } 
+    
+    .service-item__text {
+        text-align: center;
+        justify-content: center;
+        width: 45%;
+        
+    }
+
+    .service__icon--header {
+        width: 45%;
+        flex-grow: 1;
+        justify-content: center;
+}
+
+    .portfolio__grid {
+        display: flex;
+        width: 25rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+}
+
+
+/* 2.3 medium and up */
+
+@media screen and (min-width: 40em) {
+    .row {
+        max-width: 70rem;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        margin: 0 auto;
+    }
+
+    .grid {
+        display: grid;
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+    }
+
+    .m-col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .m-col-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .m-col-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .m-col-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .m-1-2 {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+
+/* 2.4 Medium only */
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .m-row-span {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    .m-hide {
+        display: none;
+    }
+}
+
+
+/* 2.5 large screens and up 2.6 Large only */
+
+@media screen and (min-width: 64em) {
+    .l-col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .l-col-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .l-col-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .l-col-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .l-col-6 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .l-row-span {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    .l-hide {
+        display: none;
+    }
+}
+
 
 
 /* 2.1 Core layout */
@@ -696,8 +841,6 @@ h1 {
 
 
 
-
-
 /*================Footer=============*/
 
 .footer {
@@ -705,7 +848,7 @@ h1 {
     color: white;
     padding: 32px 0px;
     width: auto;
-    height: 598px;
+    height: auto;
 }
 
 /* Footer container */
@@ -715,7 +858,6 @@ h1 {
     align-items: center;
     align-items: flex-start;
     max-width: 1024px;
-    ;
     margin: 0 auto;
 }
 
@@ -730,7 +872,6 @@ h1 {
     width: 546px;
     height: 72px;
     margin-left: 0;
-
 }
 
 .footer__ceo-image {
@@ -795,7 +936,6 @@ h3 {
     font-style: bold;
 }
 
-
 /* Instagram img */
 .footer__instagram__gallery {
     display: grid;
@@ -858,6 +998,62 @@ h3 {
     gap: 0;
     margin-top: 120.96px;
 }
+
+/*====================== Responsive Design =====================*/
+
+/* 1440px: Standard layout (no changes) */
+@media (max-width: 1440px) {
+    .footer__content {
+        justify-content: space-between;
+    }
+}
+
+/* 632px: Tablet layout (CEO on first row, About Us and Instagram side-by-side, Mastodon and Social Media side-by-side) */
+@media (max-width: 632px) {
+    .footer__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__ceo {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Make About Us and Instagram side-by-side */
+    .footer__aboutus, .footer__instagram {
+        width: 48%;
+        display: inline-block;
+        margin: 0 16px; /* Add margin to space them out */
+    }
+
+    /* Make Mastodon and Social Media side-by-side */
+    .footer__mastodon, .footer__socialmedia {
+        width: 48%;
+        display: inline-block;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* 432px: Mobile layout (only CEO, Social Media, and Mastodon sections) */
+@media (max-width: 432px) {
+    .footer__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__aboutus, .footer__instagram {
+        display: none; /* Hide About Us and Instagram sections */
+    }
+
+    .footer__mastodon, .footer__socialmedia {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
 
 /*==============Client=============*/    
   
